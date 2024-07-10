@@ -139,7 +139,7 @@ namespace SparkleXrm.Tasks
                 additionalParmeters += indentation + ",Image2Type = ImageTypeEnum." + attribute.Image2Type;
             if (attribute.Image2Name != null)
                 additionalParmeters += indentation + ",Image2Name = \"" + attribute.Image2Name + "\"";
-            if (attribute.Image2Attributes != null)
+            if (attribute.Image2Name != null)
                 additionalParmeters += indentation + ",Image2Attributes = \"" + attribute.Image2Attributes + "\"";
 
 
