@@ -568,6 +568,11 @@ namespace SparkleXrm.Tasks
                     image.MessagePropertyName = "EmailId";
                     break;
 
+                case "CreateMultiple":
+                case "UpdateMultiple":
+                    image.MessagePropertyName = "Targets";
+                    break;
+                    
                 default:
                     image.MessagePropertyName = "Target";
                     break;
