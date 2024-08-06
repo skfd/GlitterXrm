@@ -569,6 +569,9 @@ namespace SparkleXrm.Tasks
                     break;
 
                 case "CreateMultiple":
+                    image.MessagePropertyName = "Ids";
+                    break;
+                    
                 case "UpdateMultiple":
                     image.MessagePropertyName = "Targets";
                     break;
