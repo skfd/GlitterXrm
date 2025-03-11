@@ -171,8 +171,10 @@ namespace SparkleXrm.Tasks
 
             var pos = _code.IndexOf(classLocation.Value);
 
+            var linebreaktype = _code.Contains("\r\n") ? "\r\n" : "\n";
+
             // Find previouse line break
-            var lineBreak = _code.LastIndexOf("\r\n", pos - 1);
+            var lineBreak = _code.LastIndexOf(linebreaktype, pos - 1);
 
             // Indentation
             var indentation = _code.Substring(lineBreak, pos - lineBreak);
